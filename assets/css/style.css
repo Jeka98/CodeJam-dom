@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+h1 {
+  display: block;
+  margin: 10px 0;
+  font-size: 30px;
+}
+
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 500px;
+  user-select: none;
+  background-color: #97CC7E;
+  border: 1px solid #ff0000;
+  z-index: 10;
+}
+
+.close {
+  display: none;
+}
+
+.wrapper {
+  margin: 10px;
+}
+
+.text{
+  display: inline-block;
+  width: 90%;
+  height: 123px;  
+  margin-bottom: 10px;
+  user-select: text;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+.text:first-line{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.fa-times:before {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  font-size: 24px;
+  color: #000000;
+  cursor: pointer;
+}
+
+.fa-times:hover::before {
+  color: #ff0000;
+  transition: all .3s ease;
+}
+
+.control {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkbox-wrapper {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.radio-wrapper {
+  position: relative;
+  display: inline-block;
+  bottom: 7px;
+}
+
+.fa-circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.current {
+  color: #ff0000;
+}
+
+nav > i {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+nav > i:hover {
+  color: #ff0000;
+}
